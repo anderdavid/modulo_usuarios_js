@@ -1,0 +1,41 @@
+nav{
+    padding-left: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    background-color: black;
+   
+}
+
+.white{
+    color: aliceblue;
+}
+
+nav .menu{
+    background-color: black;
+   
+}
+nav li .menu {
+    border: 0;
+}
+
+nav .menu a{
+    font-weight: bold;
+}
+nav li .menu li{
+    border-bottom: solid 1px #293131;
+   
+}
+nav li .menu li a{
+    font-weight: normal;
+}
+
+nav li .menu li:hover{
+    background-color: rgb(17, 59, 78);
+    
+}
+
+nav li .menu li a:hover{
+    color:#fff;
+}
+
+  
