@@ -64,11 +64,19 @@
               </div>
               <div class="large-6 cell">
                   <button class="button">Editar</button>
-                  <button class="alert button">Eliminar</button>
+                  <button class="alert button" data-open="modal_delete_user">Eliminar</button>
               </div>
         </div>
     </div>
-</div> 
+</div>
+<div class="reveal" id="modal_delete_user" data-reveal>
+    <p class="lead">¿Esta seguro de borrar este usuario?</p>
+        <div class="grid-x grid-padding-x">
+            <button class ="modal-button button">ACEPTAR</button>
+            <button onClick="$('#modal_delete_user').foundation('close')" class ="modal-button alert button">CANCELAR</button>
+        </div>
+    </div>
+</div>
 
 <footer>
     <p>SmartAppSoluions Desarrollo Web, Copyrigh &copy 2020</p>
