@@ -38,4 +38,16 @@ nav li .menu li a:hover{
     color:#fff;
 }
 
+.form-container{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.register-form {
+    border: 1px solid #cacaca;
+    padding: 1rem;
+    border-radius: 0;
+  }
+  
+
   
