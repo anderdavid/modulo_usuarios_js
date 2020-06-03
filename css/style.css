@@ -53,6 +53,41 @@ nav li .menu li a:hover{
     border-radius: 0;
   }
 
+
+.icon-button{
+    padding: 1px 2px 1px 2px;
+    margin:1px 1px 1px 1px;
+    color:white;
+    -webkit-box-shadow: 0px 0px 3px 1px rgba(38,31,38,0.71);
+    -moz-box-shadow: 0px 0px 3px 1px rgba(38,31,38,0.71);
+    box-shadow: 0px 0px 3px 1px rgba(38,31,38,0.71);
+   
+}
+.red{
+    background-color:#fc0c30;
+}
+.gray{
+    background-color: #58676B;
+}
+.blue{
+    background-color: #0000ff;
+}
+
+.red:hover{
+    background-color:#8b0a1e;
+    color:#f4f4f4;
+}
+.gray:hover{
+    background-color: rgb(43, 48, 49);
+    color:#f4f4f4;
+}
+.blue:hover{
+    background-color: #0707b1;
+    color:#f4f4f4;
+}
+
+
+
 footer{
 	
 	background-color:#58676B;
