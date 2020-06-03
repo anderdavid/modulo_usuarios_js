@@ -38,6 +38,10 @@ nav li .menu li a:hover{
     color:#fff;
 }
 
+.grid-container{
+    min-height: 600px;
+}
+
 .form-container{
     padding-top: 2rem;
     padding-bottom: 2rem;
@@ -48,6 +52,16 @@ nav li .menu li a:hover{
     padding: 1rem;
     border-radius: 0;
   }
+
+footer{
+	
+	background-color:#58676B;
+	padding: 25px 40px;
+}
+
+footer p{
+	color:#e4e4e4;
+}
   
 
   
