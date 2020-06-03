@@ -7,6 +7,7 @@
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href='../css/foundation.css'/>
     <link rel="stylesheet" href='../css/app.css'/>
+    <link rel="stylesheet" href="../css/foundation-icons/foundation-icons.css">
     <link rel="stylesheet" href='../css/style.css'/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script defer src='../js/vendor/jquery.js'></script>
@@ -16,39 +17,39 @@
 </head>
 <body>
     <nav>
-       <ul class="dropdown menu" data-dropdown-menu>
-            <li><a href="view.html">Inicio</a></li>
-            <li>
-                <a href="#">Usuarios</a>
-                <ul class="menu">
-                    <li><a href="view.html">Ver</a></li>
-                    <li><a href="create.html">Crear</a></li>
-                </ul>
-            </li>
-        </ul> 
-    </nav>
+        <ul class="dropdown menu" data-dropdown-menu>
+             <li><a href="view.html" class="icon-button home step fi-home size-72"></a></li>
+             <li>
+                 <a href="#">Usuarios</a>
+                 <ul class="menu">
+                     <li><a href="view.html">Ver</a></li>
+                     <li><a href="create.html">Crear</a></li>
+                 </ul>
+             </li>
+         </ul> 
+     </nav>
     <div class="grid-container">
         <div class="grid-x grid-padding-x">
             <div class="large-12 cell"> 
                 <div class="form-container">
                     <form class="register-form">
                         <h4>Crear Usuario</h4>
-                        <label>Nombre
+                        <label>Nombre:
                             <input type="text" placeholder="Nombre" required=true>
                         </label>
-                        <label>Apellido
+                        <label>Apellido:
                             <input type="text" placeholder="Apellido" required=true>
                         </label>
-                        <label>Cedula
+                        <label>Cedula:
                             <input type="number" placeholder="Cedula" required="true">
                         </label>
-                        <label>Edad
+                        <label>Edad:
                             <input type="number" placeholder="Edad" required=true>
                         </label>
-                        <label>Email
+                        <label>Email:
                             <input type="email" placeholder="emaily@example.com" required="true">
                         </label>
-                       <label>Password
+                       <label>Password:
                             <input type="password" placeholder="Password" required="true">
                         </label>
                         <p><input type="submit" class="button" value="Registrar"></input></p>
