@@ -56,12 +56,24 @@
                         <td> 
                             <a href="viewId.html" class="icon-button blue step fi-eye size-36"></a>
                             <a href="edit.html" class="icon-button gray step fi-pencil size-36"></a>
-                            <button class="icon-button red step fi-trash size-36"></button>
+                            <Button  class="icon-button red step fi-trash size-36" 
+								 data-open="modal_delete_user">
+									
+							</Button>
+                            <!-- <button class="icon-button red step fi-trash size-36"></button> -->
                         </td>
                    </tr>
                 </tbody>
            </table>
           </div>
+        </div>
+    </div>
+    <div class="reveal" id="modal_delete_user" data-reveal>
+        <p class="lead">¿Esta seguro de borrar este usuario?</p>
+            <div class="grid-x grid-padding-x">
+                <button class ="modal-button button">ACEPTAR</button>
+                <button onClick="$('#modal_delete_user').foundation('close')" class ="modal-button alert button">CANCELAR</button>
+            </div>
         </div>
     </div>
    <footer>
