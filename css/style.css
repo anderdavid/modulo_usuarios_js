@@ -90,6 +90,14 @@ nav li .menu li a:hover{
     font-size: 22px;
 }
 
+.view-user-container{
+    margin-top: 2rem;
+}
+
+.title_key{
+    font-weight: bold;
+}
+
 
 
 footer{

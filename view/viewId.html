@@ -7,6 +7,7 @@
     <title>Foundation for Sites</title>
     <link rel="stylesheet" href='../css/foundation.css'/>
     <link rel="stylesheet" href='../css/app.css'/>
+    <link rel="stylesheet" href="../css/foundation-icons/foundation-icons.css">
     <link rel="stylesheet" href='../css/style.css'/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script defer src='../js/vendor/jquery.js'></script>
@@ -16,17 +17,67 @@
 </head>
 <body>
     <nav>
-       <ul class="dropdown menu" data-dropdown-menu>
-            <li><a href="view.html">Inicio</a></li>
-            <li>
-                <a href="#">Usuarios</a>
-                <ul class="menu">
-                    <li><a href="view.html">Ver</a></li>
-                    <li><a href="create.html">Crear</a></li>
-                </ul>
-            </li>
-        </ul> 
+        <ul class="dropdown menu" data-dropdown-menu>
+             <li><a href="view.html" class="icon-button home step fi-home size-72"></a></li>
+             <li>
+                 <a href="#">Usuarios</a>
+                 <ul class="menu">
+                     <li><a href="view.html">Ver</a></li>
+                     <li><a href="create.html">Crear</a></li>
+                 </ul>
+             </li>
+         </ul> 
     </nav>
+    
 </body>
-<h1>View Id</h1>
+
+<!-- id int8 PRIMARY KEY AUTO_INCREMENT,
+nombre VARCHAR(60),
+apellido VARCHAR(60),
+cedula VARCHAR(60),
+edad VARCHAR(60),
+email VARCHAR(60),
+password VARCHAR(60) -->
+<div class="grid-container">
+    <div class="grid-x grid-padding-x">
+        <div class="large-12 cell">
+            
+            <div class="view-user-container card">
+                <div class="card-divider">
+                  <h3>Usuario:</h3>
+                </div>
+                <div class="card-section">
+                    <div class="row">
+                        <div class="medium-6 large-6 columns">
+                           <p><span class="title_key">Nombre: </span>nombre</p>
+                        </div>
+                        <div class="medium-6 large-6 columns">
+                            <p><span class="title_key">Apellido: </span>apellido</p>
+                         </div>
+                         <div class="medium-6 large-6 columns">
+                            <p><span class="title_key">Cedula: </span>Cedula</p>
+                         </div>
+                         <div class="medium-6 large-6 columns">
+                            <p><span class="title_key">Edad: </span>edad</p>
+                         </div>
+                         <div class="medium-6 large-6 columns">
+                            <p><span class="title_key">Email: </span>email</p>
+                         </div>
+                         <div class="medium-6 large-6 columns">
+                            <p><span class="title_key">Password: </span>Password</p>
+                         </div>
+                    </div>
+                </div>
+              </div>
+              <div class="large-6 cell">
+                  <button class="button">Editar</button>
+                  <button class="alert button">Eliminar</button>
+              </div>
+        </div>
+    </div>
+</div> 
+
+<footer>
+    <p>SmartAppSoluions Desarrollo Web, Copyrigh &copy 2020</p>
+</footer>
 </html>
