@@ -10,10 +10,12 @@
     <link rel="stylesheet" href="../css/foundation-icons/foundation-icons.css">
     <link rel="stylesheet" href='../css/style.css'/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script defer src='../js/vendor/jquery.js'></script>
     <script defer src='../js/vendor/what-input.js'></script>
     <script defer src='../js/vendor/foundation.js'></script>
     <script defer src='../js/app.js'></script> 
+    <script src="../js/loadUser.js"></script>
 </head>
 <body>
     <nav>
@@ -32,25 +34,25 @@
         <div class="grid-x grid-padding-x">
             <div class="large-12 cell"> 
                 <div class="form-container">
-                    <form class="register-form">
+                    <form class="register-form" action="#" onsubmit="return createUser(event)">
                         <h4>Crear Usuario</h4>
                         <label>Nombre:
-                            <input type="text" placeholder="Nombre" required=true>
+                            <input id=uNombre type="text" placeholder="Nombre" required=true>
                         </label>
                         <label>Apellido:
-                            <input type="text" placeholder="Apellido" required=true>
+                            <input id=uApellido type="text" placeholder="Apellido" required=true>
                         </label>
                         <label>Cedula:
-                            <input type="number" placeholder="Cedula" required="true">
+                            <input id=uCedula type="number" placeholder="Cedula" required="true">
                         </label>
                         <label>Edad:
-                            <input type="number" placeholder="Edad" required=true>
+                            <input id=uEdad type="number" placeholder="Edad" required=true>
                         </label>
                         <label>Email:
-                            <input type="email" placeholder="emaily@example.com" required="true">
+                            <input id=uEmail type="email" placeholder="emaily@example.com" required="true">
                         </label>
                        <label>Password:
-                            <input type="password" placeholder="Password" required="true">
+                            <input id=uPassword type="password" placeholder="Password" required="true">
                         </label>
                         <p><input type="submit" class="button" value="Registrar"></input></p>
                     </form>

@@ -36,8 +36,6 @@ const loadUsers= ()=>{
                 row.insertCell(6).innerHTML=usuario.password
                 row.insertCell(7).innerHTML=' <td> <a href="viewId.html" class="icon-button blue step fi-eye size-36"></a><a href="edit.html" class="icon-button gray step fi-pencil size-36"></a><Button  class="icon-button red step fi-trash size-36" data-open="modal_delete_user"></Button></td>'
             });
-
-           
         }
         
     ).catch(
@@ -47,6 +45,35 @@ const loadUsers= ()=>{
     ).then(
         ()=>{
             console.log('then')
+        }
+    )
+}
+
+const createUser =(e)=>{
+    e.preventDefault()
+    console.log('createUser()')
+    nombre = document.getElementById('uNombre').value
+    apellido = document.getElementById('uApellido').value
+    cedula = document.getElementById('uCedula').value
+    edad =document.getElementById('uEdad').value
+    email =document.getElementById('uEmail').value
+    password = document.getElementById('uPassword').value
+
+    axios.post(url,{
+        'nombre':nombre,
+        'apellido':apellido,
+        'cedula':cedula,
+        'edad':edad,
+        'email':email, 
+        'password':password
+    }).then(res=>{
+        console.log(res.data.status)
+        if(res.data.status){
+            location.href="view.html"
+        }
+    }).catch(
+        (err)=>{
+            console.log(err)
         }
     )
 }
